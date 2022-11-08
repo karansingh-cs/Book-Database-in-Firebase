@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/idEditBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#000000"
+        android:hint="Name of the book:"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/idEditBookGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEditBookName"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:hint="What is Book's Genre:"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/idEditBookPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEditBookGenre"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:hint="Book Price:"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/idBtnSendData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEditBookPrice"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:background="@drawable/border"
+        android:padding="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Add Book Info"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
